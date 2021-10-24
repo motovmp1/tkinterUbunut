@@ -36,18 +36,20 @@ def reset_button():
 
 
 
+label_space = Label(root, text='')
+label_space.grid(row=0, column=1)
 
 button_1 = Button(root, text="Executar", padx=30, pady=50, command=lambda: cmd_disable())
-button_1.grid()
+button_1.grid(row=3, column=3)
 
 
 button_2 = Button(root, text="Executar", padx=30, pady=50)
-button_2.grid()
+button_2.grid(row=4, column=3)
 orig_color = button_2.cget("background")
 
 
-button_3 = Button(root, text="Reset", padx=30, pady=50, command=lambda: reset_button())
-button_3.grid(row=2, column=1)
+button_3 = Button(root, text="Reset", padx=50, pady=100, command=lambda: reset_button())
+button_3.grid(row=3, column=4)
 
 
 
